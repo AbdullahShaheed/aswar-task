@@ -1,6 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./app";
+import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
 
-const element = <h1>Hello World</h1>; //jsx expression
-console.log(element);
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
