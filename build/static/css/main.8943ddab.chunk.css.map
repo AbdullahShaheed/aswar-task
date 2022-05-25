@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,SACF,CAEA,QACE,kBACF,CAEA,WACE,cACF","file":"main.8943ddab.chunk.css","sourcesContent":["body {\r\n  padding: 0 0 0 0;\r\n}\r\n\r\n.navbar {\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.clickable {\r\n  cursor: pointer;\r\n}\r\n"]}
