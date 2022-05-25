@@ -26,10 +26,7 @@ class App extends Component {
         <NavBar user={this.state.user} />
         <main className="container">
           <Switch>
-            <Route
-              path="/home"
-              render={(props) => <Home {...props} user={this.state.user} />}
-            />
+            <Route path="/home" component={Home} />} />
             <Route path="/products/:id" component={ProductForm} />
             <Route path="/products" component={Products} />
             <Route path="/login" component={LoginForm} />

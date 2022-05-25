@@ -1,11 +1,17 @@
 import React, { Component } from "react";
+import auth from "../services/authService";
 
 class Home extends React.Component {
+  state = {};
+  componentDidMount() {
+    const user = auth.getCurrentUser();
+    this.setState({ user });
+  }
   render() {
     return (
       <div>
         <h1>Home Page</h1>
-        {!this.props.user && (
+        {!this.state.user && (
           <div>
             <p>
               Please log in if you have an account or register if you have not.
